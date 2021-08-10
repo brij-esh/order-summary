@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      /* font-size: 11px; */
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      background-image: url(../order-summary-component-main/images/pattern-background-desktop.svg);
+      background-repeat: no-repeat;
+      /* background-attachment: fixed; */
+      background-position: center;
+      height: 100%;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .attribution {
+      max-width: 25rem;
+      width: 100%;
+      border-radius: 0.93rem;
+      margin-top: 4.375rem;
+      background-color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      border-top-right-radius: 0.93rem;
+      border-top-left-radius: 0.93rem;
+    }
+
+    .hero-section {
+      width: 18.75rem;
+    }
+
+    h1,
+    h4 {
+      color: rgb(21, 21, 54);
+    }
+
+    p {
+      color: rgba(0, 0, 0, 0.5);
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .price-panel {
+      margin-top: 1.25rem;
+      width: 18.75rem;
+      display: flex;
+      align-items: center;
+      line-height: 3;
+    }
+
+    h4 {
+      margin-bottom: -7px;
+      padding: 0;
+    }
+
+    .price-panel .music {
+      max-width: 3.125rem;
+      width: 100%;
+      margin-top: 0.625rem;
+    }
+
+    .price-panel .content {
+      margin-left: 0.93rem;
+      line-height: 0.1;
+      text-align: left;
+    }
+
+
+    .price-panel .link {
+      margin-left: 3.75rem;
+      color: hsl(228, 70%, 41%);
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: hsl(228, 45%, 44%);
+    }
+
+    .button {
+      margin-top: 1.875rem;
+      margin-bottom: 1.875rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    button {
+      width: 18.75rem;
+      height: 3rem;
+      font-size: 0.913rem;
+      font-weight: 700;
+      border-radius: 0.625rem;
+      border: none;
+    }
+
+    .proceed {
+      background-color: hsl(228, 70%, 41%);
+      color: white;
+    }
+
+    .proceed:hover {
+      background-color: hsl(228, 45%, 44%);
+      cursor: pointer;
+    }
+
+    .cancel {
+      color: rgba(0, 0, 0, 0.7);
+      background-color: transparent;
+    }
+
+    .cancel:hover {
+      color: rgb(21, 21, 54);
+      cursor: pointer;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        background-image: url(../order-summary-component-main/images/pattern-background-mobile.svg);
+      }
+
+      .attribution {
+        max-width: 20rem;
+      }
+
+      .hero-section {
+        width: 16rem;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      h4 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 0.9em;
+      }
+
+      .price-panel {
+        width: 16rem;
+        line-height: 2.8;
+      }
+
+      .price-panel .content {
+        width: 6rem;
+      }
+
+      .price-panel .link {
+        margin-left: 1.75rem;
+        font-size: 0.9rem;
+
+      }
+
+      button {
+        width: 16rem;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="attribution">
+    <div class="hero-image">
+      <img src="../order-summary-component-main/images/illustration-hero.svg" alt="hero_image">
+    </div>
+    <div class="hero-section">
+      <h1>Order Summary</h1>
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!</p>
+    </div>
+    <div class="price-panel">
+      <div class="music">
+        <img src="../order-summary-component-main/images/icon-music.svg" alt="Music">
+      </div>
+      <div class="price">
+        <div class="content">
+          <h4>Annual Plan</h4>
+          <p>$59.99/year</p>
+        </div>
+      </div>
+      <div class="link">
+        <a href="#">Change</a>
+      </div>
+    </div>
+    <div class="button">
+      <button type="submit" class="proceed">Proceed to Payment</button>
+      <button type="submit" class="cancel">Cancel Order</button>
+    </div>
+  </div>
+</body>
+
+</html>
